@@ -1312,6 +1312,11 @@ html .botao-lancamento:hover {
       height: 340px;
   }*/
 }
+@media (width: 375px) and (height: 667px) {
+  .banner-img {
+    height: 375px !important;
+  }
+}
 
 .mob-text {
   height: calc(100vh - 160px);
@@ -1325,7 +1330,7 @@ html .botao-lancamento:hover {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "gotham";
   color: #192C53;
   font-weight: 300;
@@ -1336,11 +1341,15 @@ html .botao-lancamento:hover {
     margin-top: 20px;
   }
 }
+@media (width: 375px) and (height: 667px) {
+  .home-descricao-mob {
+    font-size: 13px;
+  }
+}
+
 .button {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 64px;
 }
 
 .top-button2 {

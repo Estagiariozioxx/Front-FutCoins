@@ -41,6 +41,12 @@ $vitrine-gray: #747474;
     @media (min-width: 1440px) { @content; }
 }
 
+@mixin md-375{
+    @media (width:375px){
+        @content;
+    }
+}
+
 
 //especificos
 

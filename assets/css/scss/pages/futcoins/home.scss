@@ -267,6 +267,10 @@
     @include md-500{
         height: 340px;
     }*/
+    @include se{
+        height: 375px !important;
+    }
+
 }
 .banner{
 
@@ -295,9 +299,9 @@
 
     }
     @include se{
-       // font-size: 13px;
+        font-size: 13px;
     }
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'gotham';
     color: #192C53;
     font-weight: 300;
@@ -305,16 +309,13 @@
 }
 .button{
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 64px;
 
 
 }
 
 .top-button2{
     display: block;
-
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
     width: 40px;
     height: 40px;
