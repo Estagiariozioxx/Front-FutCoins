@@ -1290,36 +1290,141 @@ html .botao-lancamento:hover {
   text-align: left;
 }
 
-.banner-img {
-  width: 100%;
-  /*
-  @include md-0{
-      height: 217px;
-  }
-  @include md-320{
-      height: 550px;
-  }
-  @include pro-12{
-      height: 480px;
-  }
-  @include h-932{
-      height: 590px;
-  }
-  @include md-360{
-      height: 390px;
-  }
-  @include md-500{
-      height: 340px;
-  }*/
+/*
+.banner-img{
+    width: 100%;
+
+    @include md-0{
+        height: 217px;
+    }
+    @include md-320{
+        height: 550px;
+    }
+    @include pro-12{
+        height: 480px;
+    }
+    @include h-932{
+        height: 590px;
+    }
+    @include md-360{
+        height: 390px;
+    }
+    @include md-500{
+        height: 340px;
+    }
+    @include se{
+        height: 375px !important;
+    }
+
+}
+.banner{
+
+
+}
+.mob-text{
+    height: calc(100vh - 160px);
+}
+.home-descricao-mob{
+    border-left: solid 4px #D8A300;
+    border-radius: 3px;
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+   // margin: 32px 16px 16px 16px;
+    @include md-0{
+     //   margin: 32px 16px 16px 16px;
+        //font-size: 10px 10px 0px 10px;
+    }
+    @include md-320{
+     //   margin: 32px 16px 16px 16px;
+     font-size: 14px;
+     margin-top: 20px;
+
+    }
+    @include se{
+        font-size: 13px;
+    }
+    font-size: 14px;
+    font-family: 'gotham';
+    color: #192C53;
+    font-weight: 300;
+
+}
+.button{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.top-button2{
+    display: block;
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+
+}*/
+.mob-text {
+  height: calc(100vh - 160px);
+}
+
+.banner {
+  background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-att.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media (width: 375px) and (height: 667px) {
-  .banner-img {
-    height: 375px !important;
+  .banner {
+    height: 365px !important;
+  }
+}
+@media (width: 430px) and (height: 932px) {
+  .banner {
+    height: 618px !important;
+  }
+}
+@media (width: 412px) and (height: 915px) {
+  .banner {
+    height: 590px !important;
+  }
+}
+@media (width: 540px) and (height: 720px) {
+  .banner {
+    height: 408px !important;
+  }
+}
+@media (width: 280px) and (height: 653px) {
+  .banner {
+    height: 330px !important;
+  }
+}
+@media (width: 360px) and (height: 640px) {
+  .banner {
+    height: 330px !important;
+  }
+}
+@media (width: 320px) and (height: 480px) {
+  .banner {
+    height: 200px !important;
+  }
+}
+@media (width: 320px) and (height: 568px) {
+  .banner {
+    height: 261px !important;
+  }
+}
+@media (width: 414px) and (height: 736px) {
+  .banner {
+    height: 427px !important;
   }
 }
 
-.mob-text {
-  height: calc(100vh - 160px);
+.logo-mob {
+  height: 150px;
 }
 
 .home-descricao-mob {
@@ -1335,21 +1440,41 @@ html .botao-lancamento:hover {
   color: #192C53;
   font-weight: 300;
 }
-@media (min-width: 401px) and (max-width: 500px) {
+@media (width: 320px) and (height: 480px) {
   .home-descricao-mob {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-}
-@media (width: 375px) and (height: 667px) {
-  .home-descricao-mob {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
 .button {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+@media (width: 820px) and (height: 1180px) {
+  .button {
+    align-items: normal;
+  }
+}
+@media (width: 540px) and (height: 720px) {
+  .button {
+    align-items: normal;
+  }
+}
+@media (width: 280px) and (height: 653px) {
+  .button {
+    align-items: normal;
+  }
+}
+@media (width: 853px) and (height: 1280px) {
+  .button {
+    align-items: normal;
+  }
+}
+@media (width: 360px) and (height: 640px) {
+  .button {
+    align-items: normal;
+  }
 }
 
 .top-button2 {

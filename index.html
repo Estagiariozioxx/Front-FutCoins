@@ -18,55 +18,50 @@
 </head>
 
 <body class="descontos-fut">
-    
-   <header class="header d-none">
+   <header class="header d-none d-lg-block">
         <div class="col-md-12">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/Cabecalho.png" style="width: 100%;">
         </div>
     </header>
-    <header class="header d-md-none">
+    <header class="header d-md-block d-lg-none">
         <div class="col-md-12">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/header-mob-1.png" style="width: 100%;">
         </div>
     </header>
-    <header class="header d-md-none">
+    <header class="header d-md-block d-lg-none">
         <div class="col-md-12">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/header-mob-2.png" style="width: 100%;">
         </div>
     </header>
-    <section class="c-home d-none">
+    <section class="c-home d-none d-lg-block">
         <!--
-        <div class="moeda-esq d-md-none">
+        <div class="moeda-esq">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moeda-esq.png" class="moeda-esq-img">
         </div>
-        <div class="moeda-top d-md-none">
+        <div class="moeda-top">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moeda-top.png" class="moeda-top-img">
         </div>
-        <div class="moeda-dir d-md-none">
+        <div class="moeda-dir">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moeda-dir.png" class="moeda-dir-img">
-        </div>
-        -->
-        
+        </div>-->
         <div class="home-container">
-                <div class="home-logo">
-                    <div class="logo">
-                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/logo.png" class="img-fluid home-logo-img">
-                    </div>
-                    <div class="home-descricao">
-                        <p class="home-text">Agora suas compras por aqui geram pontos no nosso programa de fidelidade. Isso significa que, além das ótimas promoções de sempre, você ainda consegue mais descontos incríveis com suas <span class="futcoin-negrito">FutCoins</span></p>
-                    </div>
+            <div class="home-logo">
+                <div class="logo">
+                    <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/logo.png" class="img-fluid home-logo-img">
                 </div>
-                <div class="home-moedas">
-                    <div class="moedas">
-                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moedas-home.png" class="img-fluid home-moedas-img">
-                    </div>
+                <div class="home-descricao">
+                    <p class="home-text">Agora suas compras por aqui geram pontos no nosso programa de fidelidade. Isso significa que, além das ótimas promoções de sempre, você ainda consegue mais descontos incríveis com suas <span class="futcoin-negrito">FutCoins</span></p>
                 </div>
-
-                <a href="#video" class="top-button d-none"></a>
+            </div>
+            <div class="home-moedas">
+                <div class="moedas">
+                    <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moedas-home.png" class="img-fluid home-moedas-img">
+                </div>
+            </div>
+            <a href="#video" class="top-button d-none"></a>
         </div>
     </section>
-
-
+<!--
     <section class="mob-text d-md-none">
         <div class="banner">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-completo.png" class="img-fluid banner-img" id="banner-img">
@@ -77,8 +72,8 @@
         <div class="button">
             <a href="#video" class="top-button2"></a>
         </div>  
-    </section>
-<!--
+    </section>-->
+    <!--
     <section class="mob-text d-md-none">
         <div class="container-fluid m-0 p-0">
             <div class="d-flex flex-column">
@@ -91,8 +86,23 @@
             </div>
 
         </div>
-
     </section>-->
+
+    <section class="mob-text d-md-block d-lg-none">
+        <div class="banner d-flex align-items-center justify-content-center" id="banner-mob">
+            <!--
+            <div class="logo-mob">
+                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/logo.png"
+                class="img-fluid logo-mob">
+            </div>-->
+        </div>
+        <div class="home-descricao-mob">
+            <p class="home-text-mob">Agora suas compras por aqui geram pontos no nosso programa de fidelidade. Isso significa que, além das ótimas promoções de sempre, você ainda consegue mais descontos incríveis com suas <span class="futcoin-negrito">FutCoins</span></p>
+        </div>
+        <div class="button">
+            <a href="#video" class="top-button2"></a>
+        </div>     
+    </section>
     
     <section class="c-instruction">
         <div class="container">
@@ -267,14 +277,12 @@ function ajustarAlturaDaImagem() {
     var alturaDaTela = window.innerHeight;
     var alturaDaImagem = alturaDaTela * 0.61; 
 
-    document.getElementById('banner-img').style.height = alturaDaImagem + 'px';
-    console.log(document.getElementById('banner-img'))
+    document.getElementById('banner-mob').style.height = alturaDaImagem + 'px';
 }
 
 window.addEventListener('resize', ajustarAlturaDaImagem);
 
 window.addEventListener('load', ajustarAlturaDaImagem);
-
 
 
 

@@ -69,7 +69,22 @@ $vitrine-gray: #747474;
     @media (height:932px){@content; }
 }
 
+@mixin air{
+    @media (width: 820px) and (height:1180px) { @content; }
+
+}
+
 //pixel 7
+@mixin iphone-4{
+    @media (width: 320px) and (height:480px) { @content; }
+}
+
+@mixin iphone-5{
+    @media (width:320px) and (height:568px){@content; }
+}
+@mixin iphone-6-7{
+    @media (width:414px) and (height:736px){@content; }
+}
 @mixin h-915{
     @media (height:915px){@content; }
 }
@@ -77,6 +92,28 @@ $vitrine-gray: #747474;
 @mixin pro-14{
     @media (width: 430px) and (height:932px) { @content; }
 }
+
+@mixin s20{
+    @media (width: 412px) and (height:915px) { @content; }
+}
+
+@mixin s5{
+    @media (width: 360px) and (height:640px) { @content; }
+}
+
+@mixin duo{
+    @media (width: 540px) and (height:720px) { @content; }
+}
+
+@mixin fold{
+    @media (width: 280px) and (height:653px) { @content; }
+}
+@mixin zenbook{
+    @media (width: 853px) and (height:1280px) { @content; }
+
+}
+
+
 
 
 

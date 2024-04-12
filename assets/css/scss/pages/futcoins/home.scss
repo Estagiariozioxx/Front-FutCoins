@@ -57,7 +57,6 @@
         height: 40px;
 
     }
-    
 }
 
 .moeda-esq-img{
@@ -114,7 +113,6 @@
     }*/
 
     @include md-320{
-
         background: none;
         background-size: cover;
     }
@@ -245,10 +243,10 @@
 }
 
 //moobile
-
+/*
 .banner-img{
     width: 100%;
-    /*
+    
     @include md-0{
         height: 217px;
     }
@@ -266,7 +264,7 @@
     }
     @include md-500{
         height: 340px;
-    }*/
+    }
     @include se{
         height: 375px !important;
     }
@@ -312,6 +310,103 @@
     justify-content: center;
 
 
+}
+
+.top-button2{
+    display: block;
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+
+}*/
+
+.mob-text{
+    height: calc(100vh - 160px);
+}
+.banner{
+    background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-att.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include se{
+        height: 365px !important;
+    }
+    @include pro-14{
+        height: 618px !important;
+
+    }
+    @include s20{
+        height: 590px !important;
+    }
+    @include duo{
+        height: 408px !important;
+    }
+    @include fold{
+        height: 330px !important;
+
+    }
+    @include s5{
+        height: 330px !important;
+    }
+    @include iphone-4{
+        height: 200px !important;
+    }
+
+    @include iphone-5{
+        height: 261px !important;
+
+    }
+    @include iphone-6-7{
+        height: 427px !important;
+    }
+    
+
+
+}
+.logo-mob{
+    height: 150px;
+}
+
+.home-descricao-mob{
+    border-left: solid 4px #D8A300;
+    border-radius: 3px;
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: 'gotham';
+    color: #192C53;
+    font-weight: 300;
+
+    @include iphone-4{
+        font-size: 12px;
+
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include air{
+        align-items: normal;
+    }
+    @include duo{
+        align-items: normal;
+    }
+    @include fold{
+        align-items: normal;
+    }
+    @include zenbook{
+        align-items: normal;
+    }
+    @include s5{
+        align-items: normal;
+    }
 }
 
 .top-button2{
