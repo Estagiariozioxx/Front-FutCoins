@@ -1,0 +1,301 @@
+.futcoin-negrito{
+    font-weight: bold;
+    color: #192C53;
+}
+.top-button{
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+   // background-color: rgb(116, 29, 29);
+    background-repeat: no-repeat;
+    background-position: center;
+   // border: 2px solid #a71a1a;
+    border-radius: 50%;
+    display: block;
+    bottom: 40px;
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    @include md-320{
+        bottom: 13px;
+        width: 40px;
+        height: 40px;
+
+    }
+    @include md-0{
+        width: 30px;
+        height: 30px;
+        bottom: 13px;
+
+    }
+    @include se{
+        width: 30px;
+        height: 30px;
+        bottom: 13px;
+
+    }
+    @include pro-12{
+        width: 40px;
+        height: 40px;
+    }
+    @include h-932{
+        bottom: 27px;
+        width: 40px;
+        height: 40px;
+        
+    }
+    @include h-915{
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+    }
+    @include md-360{
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+
+    }
+    
+}
+
+.moeda-esq-img{
+    @include md-320{
+        background-size: auto;
+        position: absolute;
+        top: 200px;
+    
+    }
+    @include md-0{
+        position: absolute;
+    }
+}
+.moeda-dir-img{
+    @include md-320{
+        position: absolute;
+        right: 0px;
+        bottom: 202px;
+        height: 230px;
+    }
+    @include md-0{
+        position: absolute;
+        right: 0px;
+        bottom: 202px;
+        height: 222px;
+    }
+    @include xr{
+        height: 300px;
+    }
+    
+}
+.moeda-top-img{
+
+    @include md-320{
+        position: absolute;
+        right: 0px;
+    }
+    @include md-0{
+       display:none
+    }
+
+}
+.c-home{
+    background: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/fundo.png');
+   background-size: cover;
+   //height: -webkit-calc(100vh - 160px);
+   //height: -moz-calc(100vh - 160px);
+  // height: calc(100vh - 160px);
+  /*
+    @include md-320{
+        background: url('https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-mob.png');
+        background-size: cover;
+    
+    }*/
+
+    @include md-320{
+
+        background: none;
+        background-size: cover;
+    }
+
+    .home{
+        &-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            //height: 100vh;
+           
+           height: -webkit-calc(100vh - 100px);
+            height: -moz-calc(100vh - 100px);
+            height: calc(100vh - 100px);
+
+            @include md-320 {
+                align-items: center;
+                justify-content: center;
+                margin-left: 0px;
+                padding-left: 0px;
+                height: calc(100vh - 310px);
+
+            }
+            @include md-0 {
+                align-items: center;
+                margin-left: 0px;
+                padding-left: 0px;
+                height: calc(100vh - 310px);
+
+            }
+        }
+        &-itens{
+
+        }
+        &-logo{
+            display: flex;
+            flex-direction: column;
+            margin-left: 86px;
+            padding-left: 32px;
+          
+            width: 410px;
+
+            @include md-320{
+              
+                align-items: center;
+                flex-direction: column;
+                margin-left: 0px;
+                padding-left: 0px;
+
+            }
+            @include md-0{
+              
+                align-items: center;
+                flex-direction: column;
+                margin-left: 0px;
+                padding-left: 0px;
+
+            }
+
+        }
+        &-moedas{
+            @include md-320{
+                display: none;
+            }
+            @include md-0{
+                display: none;
+            }
+        
+           
+           &-img{
+           // height: 100vh;
+            
+            height: -webkit-calc(100vh - 100px);
+            height: -moz-calc(100vh - 100px);
+            height: calc(100vh - 100px);
+            
+           }
+        }
+        &-logo-img{
+            height: 250px;
+            margin-bottom: 36px;
+
+
+            @include md-320{
+                height: 140px;
+                margin-bottom: 0px;
+
+            }
+            @include md-0{
+                height: 100px;
+                margin-bottom: 0px;
+
+            }
+            @include xr{
+                height: 170px;
+            }
+
+
+        }
+
+        &-descricao{
+            border-left: solid 4px #D8A300;
+            border-radius: 3px;
+            padding-left: 32px;
+
+            @include md-320{
+                display: none;
+
+            }
+            @include md-0{
+                display: none;
+
+            }
+        }
+        &-text{
+            font-family: "gotham";
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+            text-align: left;
+        }
+
+        //MOBILE
+       
+    }
+    
+}
+
+//moobile
+
+.banner-img{
+    width: 100%;
+    @include md-0{
+        height: 217px;
+    }
+    @include md-320{
+        height: 550px;
+    }
+    @include pro-12{
+        height: 480px;
+    }
+    @include h-932{
+        height: 590px;
+    }
+    @include md-360{
+        height: 390px;
+    }
+    @include md-500{
+        height: 340px;
+    }
+}
+.banner{
+
+    
+}
+.mob-text{
+    height: calc(100vh - 160px);
+}
+.home-descricao-mob{
+    border-left: solid 4px #D8A300;
+    border-radius: 3px;
+    padding-left: 22px;
+    margin: 32px 16px 16px 16px;
+    @include md-0{
+        margin: 32px 16px 16px 16px;
+        font-size: 10px;
+    }
+    @include md-320{
+        margin: 32px 16px 16px 16px;
+
+    }
+    @include se{
+        font-size: 13px;
+    }
+    font-size: 14px;
+    font-family: 'gotham';
+    color: #192C53;
+    font-weight: 300;
+
+}
+
+
+

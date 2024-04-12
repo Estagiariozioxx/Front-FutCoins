@@ -1,0 +1,90 @@
+
+//sass --watch assets/css/scss/pages/futcoins.min.scss:assets/css/futcoins.min.css
+
+$vitrine-blue: #192C53;
+$vitrine-gray: #747474;
+
+//@import "../_lib/progressive.css";
+
+@import "../components/reset-tray";
+
+@import "../fonts/bebas-neue";
+@import "../fonts/gotham-book";
+@import "../fonts/gotham-medium";
+@import "../fonts/gotham-bold";
+@import "../fonts/gotham-black";
+@import "../fonts/sporty";
+
+@mixin md-1200{
+    @media (min-width: 1200px) { @content; }
+}
+@mixin md-0{
+    @media (min-width: 0px) and (max-width: 320px) { @content; }
+}
+
+@mixin md-360{
+    @media (min-width: 340px) and (max-width: 360px) { @content; }
+}
+@mixin md-320{
+    @media (min-width: 401px) and (max-width: 500px) { @content; }
+}
+@mixin md-500{
+    @media (min-width: 500px) and (max-width: 640px){ @content; }
+}
+@mixin md-768{
+    @media (min-width: 768px) { @content; }
+}
+@mixin md-1024{
+    @media (min-width: 1024px) { @content; }
+}
+@mixin md-1440{
+    @media (min-width: 1440px) { @content; }
+}
+
+
+//especificos
+
+
+@mixin se{
+
+    @media (width:375px) and (height:667px){
+        @content;
+    }
+}
+
+@mixin xr{
+    @media (min-width: 412px) and (max-height:932px) { @content; }
+}
+
+@mixin pro-12{
+    @media (height:844px) { @content; }
+}
+@mixin h-932{
+    @media (height:932px){@content; }
+}
+
+//pixel 7
+@mixin h-915{
+    @media (height:915px){@content; }
+}
+
+@mixin pro-14{
+    @media (width: 430px) and (height:932px) { @content; }
+}
+
+
+
+
+
+
+@import "../components/variables";
+@import "futcoins/home";
+@import "futcoins/works";
+@import "futcoins/instruction";
+@import "futcoins/wallet";
+@import "futcoins/banner";
+@import "futcoins/help";
+@import "futcoins/vitrine";
+@import "../fonts/icons-font";
+
+
