@@ -68,13 +68,18 @@
 
 
     <section class="mob-text d-md-none">
-        <div class="banner">
-            <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-completo.png" class="img-fluid banner-img">
-        </div>
-        <div class="home-descricao-mob">
-            <p class="home-text-mob">Agora suas compras por aqui geram pontos no nosso programa de fidelidade. Isso significa que, além das ótimas promoções de sempre, você ainda consegue mais descontos incríveis com suas <span class="futcoin-negrito">FutCoins</span></p>
-        </div>
-            <a href="#video" class="top-button"></a>
+            <div class="banner">
+                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-completo.png" class="img-fluid banner-img" id="banner-img">
+            </div>
+                <div class="home-descricao-mob">
+                    <p class="home-text-mob">Agora suas compras por aqui geram pontos no nosso programa de fidelidade. Isso significa que, além das ótimas promoções de sempre, você ainda consegue mais descontos incríveis com suas <span class="futcoin-negrito">FutCoins</span></p>
+                </div>
+                <div class="button">
+                    <a href="#video" class="top-button2"></a>
+                </div>
+
+
+            
     </section>
 <!--
     <section class="mob-text d-md-none">
@@ -256,5 +261,52 @@
     <script src="assets/js/vendor/slick/slick.min.js"></script>
     <script src="assets/js/modules/futcoins.js"></script>
 </body>
+
+
+<script>
+    // Função para ajustar a altura da imagem com base na altura da tela
+function ajustarAlturaDaImagem() {
+ 
+    var alturaDaTela = window.innerHeight;
+    var alturaDaImagem = alturaDaTela * 0.6; 
+
+    document.getElementById('banner-img').style.height = alturaDaImagem + 'px';
+    console.log(document.getElementById('banner-img'))
+}
+
+window.addEventListener('resize', ajustarAlturaDaImagem);
+
+window.addEventListener('load', ajustarAlturaDaImagem);
+
+
+
+
+// Função para ajustar a altura da div "button" dinamicamente
+function ajustarAlturaButton() {
+    // Seleciona a section
+    var section = document.querySelector('.mob-text.d-md-none');
+    // Seleciona a div "button" dentro da section
+    var buttonDiv = section.querySelector('.button');
+    // Calcula a altura da section
+    var sectionHeight = section.offsetHeight;
+    // Calcula a altura total ocupada pelas outras divs dentro da section
+    var totalContentHeight = 0;
+    section.childNodes.forEach(function(node) {
+        if (node.nodeType === 1 && node !== buttonDiv) { // 1 means it's an element node
+            totalContentHeight += node.offsetHeight;
+        }
+    });
+    // Calcula a altura restante
+    var remainingHeight = sectionHeight - totalContentHeight;
+    // Define a altura da div "button" igual à altura restante
+    buttonDiv.style.height = remainingHeight + 'px';
+}
+
+// Chama a função quando a página é carregada e quando a janela é redimensionada
+window.addEventListener('DOMContentLoaded', ajustarAlturaButton);
+window.addEventListener('resize', ajustarAlturaButton);
+
+
+</script>
 
 </html>

@@ -248,6 +248,7 @@
 
 .banner-img{
     width: 100%;
+    /*
     @include md-0{
         height: 217px;
     }
@@ -265,7 +266,7 @@
     }
     @include md-500{
         height: 340px;
-    }
+    }*/
 }
 .banner{
 
@@ -278,22 +279,46 @@
     border-left: solid 4px #D8A300;
     border-radius: 3px;
     padding-left: 22px;
-    margin: 32px 16px 16px 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+   // margin: 32px 16px 16px 16px;
     @include md-0{
-        margin: 32px 16px 16px 16px;
-        font-size: 10px;
+     //   margin: 32px 16px 16px 16px;
+        //font-size: 10px 10px 0px 10px;
     }
     @include md-320{
-        margin: 32px 16px 16px 16px;
+     //   margin: 32px 16px 16px 16px;
+     font-size: 14px;
+     margin-top: 20px;
 
     }
     @include se{
-        font-size: 13px;
+       // font-size: 13px;
     }
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'gotham';
     color: #192C53;
     font-weight: 300;
+
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+
+
+}
+
+.top-button2{
+    display: block;
+
+    background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
 
 }
 

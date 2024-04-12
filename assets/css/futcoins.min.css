@@ -1292,36 +1292,25 @@ html .botao-lancamento:hover {
 
 .banner-img {
   width: 100%;
-}
-@media (min-width: 0px) and (max-width: 320px) {
-  .banner-img {
-    height: 217px;
+  /*
+  @include md-0{
+      height: 217px;
   }
-}
-@media (min-width: 401px) and (max-width: 500px) {
-  .banner-img {
-    height: 550px;
+  @include md-320{
+      height: 550px;
   }
-}
-@media (height: 844px) {
-  .banner-img {
-    height: 480px;
+  @include pro-12{
+      height: 480px;
   }
-}
-@media (height: 932px) {
-  .banner-img {
-    height: 590px;
+  @include h-932{
+      height: 590px;
   }
-}
-@media (min-width: 340px) and (max-width: 360px) {
-  .banner-img {
-    height: 390px;
+  @include md-360{
+      height: 390px;
   }
-}
-@media (min-width: 500px) and (max-width: 640px) {
-  .banner-img {
-    height: 340px;
-  }
+  @include md-500{
+      height: 340px;
+  }*/
 }
 
 .mob-text {
@@ -1332,27 +1321,34 @@ html .botao-lancamento:hover {
   border-left: solid 4px #D8A300;
   border-radius: 3px;
   padding-left: 22px;
-  margin: 32px 16px 16px 16px;
-  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  font-size: 12px;
   font-family: "gotham";
   color: #192C53;
   font-weight: 300;
 }
-@media (min-width: 0px) and (max-width: 320px) {
-  .home-descricao-mob {
-    margin: 32px 16px 16px 16px;
-    font-size: 10px;
-  }
-}
 @media (min-width: 401px) and (max-width: 500px) {
   .home-descricao-mob {
-    margin: 32px 16px 16px 16px;
+    font-size: 14px;
+    margin-top: 20px;
   }
 }
-@media (width: 375px) and (height: 667px) {
-  .home-descricao-mob {
-    font-size: 13px;
-  }
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.top-button2 {
+  display: block;
+  background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
+  width: 40px;
+  height: 40px;
+  background-size: cover;
 }
 
 .c-works {
