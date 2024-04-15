@@ -217,6 +217,31 @@
 		$('html, body').animate({ scrollTop: target_top/3 }, 20);
 	});
 
+
+	$('.home-container a').on('click', function(event){
+		event.preventDefault();
+		
+		var section  = $(this).attr('data-href');
+		var top      = $(section).offset().top - 42;
+	
+		$('html, body').animate({
+			scrollTop: top
+		}, 800);
+	});
+
+	$('.top-button2').on('click', function(event){
+		event.preventDefault();
+		console.log("foi");
+		
+		var section  = $(this).attr('data-href');
+		var top      = $(section).offset().top - 42;
+	
+		$('html, body').animate({
+			scrollTop: top
+		}, 800);
+	});
+	
+
 	
 
 })(jQuery);

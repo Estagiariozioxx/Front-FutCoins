@@ -15,7 +15,11 @@ $vitrine-gray: #747474;
 @import "../fonts/gotham-black";
 @import "../fonts/sporty";
 
-@mixin md-1200{
+/* Smartphones em modo retrato */
+
+
+
+@mixin md{
     @media (min-width: 1200px) { @content; }
 }
 @mixin md-0{
@@ -74,6 +78,11 @@ $vitrine-gray: #747474;
 
 }
 
+@mixin ipad-pro{
+    @media (width: 1024px) and (height:1366px) { @content; }
+
+}
+
 //pixel 7
 @mixin iphone-4{
     @media (width: 320px) and (height:480px) { @content; }
@@ -113,6 +122,18 @@ $vitrine-gray: #747474;
 
 }
 
+@mixin surface{
+    @media (width: 912px) and (height:1368px) { @content; }
+
+}
+
+@mixin tablets{
+    @media (min-width: 768px) and (max-width:1024px) { @content; }
+
+}
+
+
+
 
 
 
@@ -128,6 +149,7 @@ $vitrine-gray: #747474;
 @import "futcoins/banner";
 @import "futcoins/help";
 @import "futcoins/vitrine";
+@import "futcoins/passos";
 @import "../fonts/icons-font";
 
 

@@ -1,0 +1,40 @@
+.c-passos{
+    font-family: 'gotham';
+    .passos{
+
+        &-describe{
+            display: flex;
+            align-items: center;
+        }
+
+        &-num{
+            font-family: 'gotham';
+            color: 
+            #192C53;
+            font-size: 100px;
+            font-weight: 800;
+            padding-right: 8px;
+
+        }
+        &-text{
+            font-family: 'gotham';
+            font-size: 14px;
+        }
+
+        &-box-img{
+            display: flex;
+            justify-content: center;
+            font-weight: 400;
+
+
+        }
+        &-img{
+            @include md{
+                height: 200px;
+
+            }
+            
+        }
+
+    }
+}

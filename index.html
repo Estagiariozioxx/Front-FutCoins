@@ -33,7 +33,7 @@
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/header-mob-2.png" style="width: 100%;">
         </div>
     </header>
-    <section class="c-home d-none d-lg-block">
+    <section class="c-home d-none d-xl-block" id="pc">
         <!--
         <div class="moeda-esq">
             <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moeda-esq.png" class="moeda-esq-img">
@@ -58,7 +58,7 @@
                     <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moedas-home.png" class="img-fluid home-moedas-img">
                 </div>
             </div>
-            <a href="#video" class="top-button d-none"></a>
+            <a href="#" data-href="#instru" class="top-button d-none d-lg-block"></a>
         </div>
     </section>
 <!--
@@ -88,7 +88,7 @@
         </div>
     </section>-->
 
-    <section class="mob-text d-md-block d-lg-none">
+    <section class="mob-text d-md-block d-xl-none" id="cel">
         <div class="banner d-flex align-items-center justify-content-center" id="banner-mob">
             <!--
             <div class="logo-mob">
@@ -100,12 +100,13 @@
             <p class="home-text-mob">Agora suas compras por aqui geram pontos no nosso programa de fidelidade. Isso significa que, além das ótimas promoções de sempre, você ainda consegue mais descontos incríveis com suas <span class="futcoin-negrito">FutCoins</span></p>
         </div>
         <div class="button">
-            <a href="#video" class="top-button2"></a>
+            <a href="#" data-href="#instru" class="top-button2"></a>
         </div>     
     </section>
     
-    <section class="c-instruction">
+    <section class="c-instruction" id="instru">
         <div class="container">
+            <h1 class="instruction-title-top">Veja como é fácil ganhar e usar suas FutCoins</h1>
             <div class="instruction_slick">
                 <div class="item">
                     <div class="instruction-box-img">
@@ -146,30 +147,66 @@
             </div>
         </div>
     </section>
-<!--
+    
+
     <section class="c-wallet">
         <div class="container">
             <div class="row wallet-box d-flex justify-content-between align-items-center">
                 <div class="col-md-5 wallet-box-img">
-                    <img class="wallet-img w-100" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/wallet.png">
+                    <img class="wallet-img w-100" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/moeda-brilhante.png">
                 </div>
                 <div class="col-md-6 wallet-box-content">
-                    <h2 class="wallet-toptitle">Carteira</h2>
-                    <h1 class="wallet-title">Até 80% do seu dinheiro <strong>de volta em todas as compras</strong> </h1>
+                    <h1 class="wallet-title">Aqui seu real vale muito mais!</h1>
+                    <h2 class="wallet-toptitle">A cada <strong>1 real</strong> de cashback você ganha <strong>1 FutCoin!</strong></h2>
 
                     <div class="wallet-equal">
-                        <span class="wallet-futcoin">1 FutCoin</span>
+                        <span class="wallet-futcoin">R$ 1,00</span>
                         <img class="wallet-equal-img" src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/equal.png">
-                        <span class="wallet-futcoin wallet-futcoin_real">R$ 1,00</span>
+                        <span class="wallet-futcoin wallet-futcoin_real">1 FutCoin</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
+    <!---->
 
-    <!---
+    <section class="c-passos">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <div class="passos-describe">
+                        <span class="passos-num">1</span>
+                        <p class="passos-text">Fique de olho nas <strong>Tags</strong> de <strong>Cashback</strong> na hora de comprar seus produtos</p>
+                    </div>
+                    <div class="passos-box-img">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-1.png" class="passos-img">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="passos-box-img">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-2.png" class="passos-img">
+                    </div>
+                    <div class="passos-describe">
+                        <span class="passos-num">2</span>
+                        <p class="passos-text">Todas as suas compras gerarão um retorno de 2% de cashback, aí é só juntar suas <strong>Futcoins!</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="passos-describe">
+                        <span class="passos-num">3</span>
+                        <p class="passos-text">E pronto! <br>Use suas moedas para obter <strong>descontos</strong> nas suas próximas compras</p>
+                    </div>
+                    <div class="passos-box-img">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-3.png" class="passos-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="c-banner"></section>
+
+
+    <!--<section class="c-banner"></section>-->
     <div class="block vitrine c-vitrine">
         <div class="container">
             <h1 class="titulo-vitrine">{{settings.tituloVitrinefutCoins}}</h1>
@@ -255,7 +292,7 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -310,6 +347,40 @@ function ajustarAlturaButton() {
 // Chama a função quando a página é carregada e quando a janela é redimensionada
 window.addEventListener('DOMContentLoaded', ajustarAlturaButton);
 window.addEventListener('resize', ajustarAlturaButton);
+
+function printScreenSize() {
+  var width = window.screen.width;
+  var height = window.screen.height;
+ console.log("Width: " + width + "px<br>");
+  console.log("Height: " + height + "px");
+}
+
+// Chamando a função para imprimir na tela
+printScreenSize();
+
+
+
+
+function verificarResolucao() {
+  // Verificar se a largura da tela está entre 768px e 1024px
+  if (window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches) {
+    // Ocultar a div que você deseja esconder
+    document.getElementById("pc").style.display = "none !important";
+    console.log("entere");
+    
+    // Exibir a div que você deseja mostrar
+    document.getElementById("cel").style.display = "block !important";
+  } else {
+    // Se a largura da tela estiver fora do intervalo especificado, reverter as alterações
+    document.getElementById("cel").style.display = "block !important";
+    document.getElementById("pc").style.display = "none !important";
+  }
+}
+
+// Chamar a função quando a página carregar e quando a janela for redimensionada
+window.onload = verificarResolucao;
+window.onresize = verificarResolucao;
+
 
 
 </script>

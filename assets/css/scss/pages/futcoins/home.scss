@@ -6,8 +6,8 @@
     background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
    // background-color: rgb(116, 29, 29);
     background-repeat: no-repeat;
     background-position: center;
@@ -197,7 +197,7 @@
             margin-bottom: 36px;
 
 
-            @include md-320{
+           /* @include md-320{
                 height: 140px;
                 margin-bottom: 0px;
 
@@ -209,7 +209,7 @@
             }
             @include xr{
                 height: 170px;
-            }
+            }*/
 
 
         }
@@ -218,6 +218,7 @@
             border-left: solid 4px #D8A300;
             border-radius: 3px;
             padding-left: 32px;
+            
 
             @include md-320{
                 display: none;
@@ -230,7 +231,7 @@
         }
         &-text{
             font-family: "gotham";
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 400;
             margin: 0;
             text-align: left;
@@ -323,6 +324,9 @@
 
 .mob-text{
     height: calc(100vh - 160px);
+    @include tablets{
+        height: auto;
+    }
 }
 .banner{
     background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-att.png");
@@ -355,10 +359,20 @@
 
     @include iphone-5{
         height: 261px !important;
-
     }
     @include iphone-6-7{
         height: 427px !important;
+    }
+    @include ipad-pro{
+        height: 1164px !important
+
+    }
+    @include surface{
+        height: 951px !important
+    }
+    @include zenbook{
+        height: 893px !important
+
     }
     
 

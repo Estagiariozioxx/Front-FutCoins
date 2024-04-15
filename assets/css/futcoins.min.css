@@ -1049,6 +1049,7 @@ html .botao-lancamento:hover {
   font-weight: bold;
   src: url("fonts/sporty/SportyPro-Bold.otf") format("opentype");
 }
+/* Smartphones em modo retrato */
 /** PAGE PALMEIRAS **/
 .futcoin-negrito {
   font-weight: bold;
@@ -1059,8 +1060,8 @@ html .botao-lancamento:hover {
   background-image: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/seta.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -1249,23 +1250,19 @@ html .botao-lancamento:hover {
 .c-home .home-logo-img {
   height: 250px;
   margin-bottom: 36px;
-}
-@media (min-width: 401px) and (max-width: 500px) {
-  .c-home .home-logo-img {
-    height: 140px;
-    margin-bottom: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 320px) {
-  .c-home .home-logo-img {
-    height: 100px;
-    margin-bottom: 0px;
-  }
-}
-@media (min-width: 412px) and (max-height: 932px) {
-  .c-home .home-logo-img {
-    height: 170px;
-  }
+  /* @include md-320{
+       height: 140px;
+       margin-bottom: 0px;
+
+   }
+   @include md-0{
+       height: 100px;
+       margin-bottom: 0px;
+
+   }
+   @include xr{
+       height: 170px;
+   }*/
 }
 .c-home .home-descricao {
   border-left: solid 4px #D8A300;
@@ -1284,7 +1281,7 @@ html .botao-lancamento:hover {
 }
 .c-home .home-text {
   font-family: "gotham";
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   margin: 0;
   text-align: left;
@@ -1370,6 +1367,11 @@ html .botao-lancamento:hover {
 .mob-text {
   height: calc(100vh - 160px);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mob-text {
+    height: auto;
+  }
+}
 
 .banner {
   background: url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/banner-att.png");
@@ -1420,6 +1422,21 @@ html .botao-lancamento:hover {
 @media (width: 414px) and (height: 736px) {
   .banner {
     height: 427px !important;
+  }
+}
+@media (width: 1024px) and (height: 1366px) {
+  .banner {
+    height: 1164px !important;
+  }
+}
+@media (width: 912px) and (height: 1368px) {
+  .banner {
+    height: 951px !important;
+  }
+}
+@media (width: 853px) and (height: 1280px) {
+  .banner {
+    height: 893px !important;
   }
 }
 
@@ -1541,11 +1558,29 @@ html .botao-lancamento:hover {
 }
 
 .c-instruction {
-  padding: 60px 0px;
+  padding: 60px;
 }
 @media (min-width: 1200px) {
   .c-instruction {
     background-color: #E6E6E6;
+  }
+}
+.c-instruction .instruction-title-top {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 36px;
+  font-family: "gotham";
+  color: #000;
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .c-instruction .instruction-title-top {
+    font-size: 32px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-instruction .instruction-title-top {
+    font-size: 22px;
   }
 }
 .c-instruction .instruction_slick .item {
@@ -1572,15 +1607,39 @@ html .botao-lancamento:hover {
   padding-top: 16px;
   font-weight: 800;
   color: #000;
+  height: 70px;
+}
+@media (min-width: 1200px) {
+  .c-instruction .instruction-title {
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-instruction .instruction-title {
+    height: auto;
+  }
 }
 .c-instruction .instruction-describe {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 350;
   text-align: center;
+  font-family: "gotham";
+  height: 70px;
 }
 @media (min-width: 1200px) {
   .c-instruction .instruction-describe {
     font-size: 16px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-instruction .instruction-describe {
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-instruction .instruction-img {
+    height: 133px;
   }
 }
 .c-instruction .slick-dots {
@@ -1613,11 +1672,16 @@ html .botao-lancamento:hover {
 
 .c-wallet {
   padding: 60px 20px;
-  background-color: #E6E6E6;
+  font-family: "gotham";
 }
 @media (min-width: 1200px) {
   .c-wallet {
     padding: 60px 0px 100px 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-wallet .wallet-img {
+    height: 300px;
   }
 }
 .c-wallet .wallet-box {
@@ -1642,18 +1706,20 @@ html .botao-lancamento:hover {
   }
 }
 .c-wallet .wallet-toptitle {
+  font-family: "gotham";
   font-size: 16px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
   text-align: center;
+  padding-bottom: 32px;
 }
 @media (min-width: 1200px) {
   .c-wallet .wallet-toptitle {
-    text-align: start;
+    text-align: center;
+    font-size: 18px;
   }
 }
 .c-wallet .wallet-title {
   font-size: 27px;
+  font-family: "gotham";
   color: #000;
   text-align: center;
   padding-bottom: 32px;
@@ -1670,17 +1736,20 @@ html .botao-lancamento:hover {
 .c-wallet .wallet-equal {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
 }
 .c-wallet .wallet-equal-img {
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
   margin: -10px 0px;
   z-index: 999;
 }
 @media (min-width: 1200px) {
   .c-wallet .wallet-equal-img {
+    width: 45px;
+    height: 45px;
     margin: 0px -10px;
+    flex-direction: column;
   }
 }
 @media (min-width: 1200px) {
@@ -1689,23 +1758,31 @@ html .botao-lancamento:hover {
   }
 }
 .c-wallet .wallet-futcoin {
-  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 47px;
   text-align: center;
   font-weight: 800;
   color: #000;
-  padding: 15px 50px;
-  background-color: #00DF5E;
-  border: 2px #00DF5E solid;
+  background-color: white;
+  border: 2px #E0B531 solid;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 14px;
 }
 @media (min-width: 1200px) {
   .c-wallet .wallet-futcoin {
+    padding: 15px 50px;
+    display: block;
     width: auto;
+    font-size: 25px;
+    height: auto;
   }
 }
 .c-wallet .wallet-futcoin_real {
   background-color: transparent;
+  background-color: #E0B531;
 }
 
 .c-banner {
@@ -2002,6 +2079,35 @@ html .botao-lancamento:hover {
   color: #939393;
   font-size: 22px;
   font-weight: 700;
+}
+
+.c-passos {
+  font-family: "gotham";
+}
+.c-passos .passos-describe {
+  display: flex;
+  align-items: center;
+}
+.c-passos .passos-num {
+  font-family: "gotham";
+  color: #192C53;
+  font-size: 100px;
+  font-weight: 800;
+  padding-right: 8px;
+}
+.c-passos .passos-text {
+  font-family: "gotham";
+  font-size: 14px;
+}
+.c-passos .passos-box-img {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+@media (min-width: 1200px) {
+  .c-passos .passos-img {
+    height: 200px;
+  }
 }
 
 @font-face {

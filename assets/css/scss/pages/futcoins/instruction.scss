@@ -3,12 +3,30 @@
 }
 
 .c-instruction{
-    padding: 60px 0px;
+    padding: 60px ;
 
     @include md{
         background-color: #E6E6E6;
     }
     .instruction{
+       
+        &-title-top{
+            text-align: center;
+            margin-bottom: 100px;
+            margin-top: 36px;
+            font-family: 'gotham';
+            color: #000;
+            font-size: 16px;
+            @include md{
+                font-size: 32px;
+
+            }
+            @include tablets{
+                font-size: 22px;
+
+            }
+
+        }
         &_slick{
             .item{
                 display: flex;
@@ -16,11 +34,13 @@
                 align-items: center;
                 padding: 16px;
                 justify-content: center;
+            
             }
         }
         &-box-img{
             display: flex;
             justify-content: center;
+          
         }
         &-box-content{
             display: flex;
@@ -35,14 +55,33 @@
             padding-top: 16px;
             font-weight: 800;
             color: #000;
+            height: 70px;
+            @include md{
+                height: auto;
+
+            }
+            @include tablets{
+                height: auto;
+            }
         }
         &-describe{
-            font-size: 20px;
+            font-size: 14px;
             font-weight: 350;
             text-align: center;
+            font-family: 'gotham';
+            height: 70px;
 
             @include md{
                 font-size: 16px;
+                height: auto;
+            }
+            @include tablets{
+                height: auto;
+            }
+        }
+        &-img{
+            @include tablets{
+                height: 133px;
             }
         }
     }
