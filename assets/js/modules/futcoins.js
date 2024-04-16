@@ -246,6 +246,48 @@
 
 })(jQuery);
 
+// Seleciona todas as divs de pergunta
+const divsPergunta = document.querySelectorAll('.ajuda-pergunta');
+
+// Adiciona um evento de clique para cada div de pergunta
+divsPergunta.forEach(function(divPergunta) {
+  divPergunta.addEventListener('click', function() {
+    // Obtém o ID da pergunta atual
+    const perguntaId = this.id;
+    // Obtém o número da pergunta a partir do ID
+    const perguntaNumero = perguntaId.replace('pergunta', '');
+    // Monta o ID da resposta correspondente
+    const respostaId = 'resposta' + perguntaNumero;
+    // Seleciona a resposta correspondente
+    const resposta = document.getElementById(respostaId);
+    
+    // Verifica se a resposta está visível
+    if (resposta.style.display === 'block') {
+      // Se estiver visível, oculta-a
+      resposta.style.display = 'none';
+	 // this.style.borderBottom = 'solid 1px rgba(0, 0, 0, 0.2)'
+	  this.querySelector('.ajuda-seta').style.backgroundImage = 'url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/setasvg2.svg")';
+	  if(this.classList.contains("ajuda-master-bot")){
+		this.style.borderBottom='solid 1px rgba(0, 0, 0, 0.2)';
+		resposta.style.borderBottom='none';
+	  }
+
+    } else {
+      // Se estiver oculta, exibe-a
+      resposta.style.display = 'block';
+	 // this.style.borderBottom = 'none';
+	  this.querySelector('.ajuda-seta').style.backgroundImage = 'url("https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/setacima.svg")';
+	  if(this.classList.contains("ajuda-master-bot")){
+		this.style.borderBottom='none';
+		resposta.style.borderBottom='solid 1px rgba(0, 0, 0, 0.2)';
+	  }
+
+    }
+
+	console.log("Entrei aquiii");
+  });
+});
+
 
 
 

@@ -1,6 +1,18 @@
 .c-passos{
     font-family: 'gotham';
+    padding:0px 16px 0px 16px;
+    @include md{
+
+        padding:0px 0px 0px 0px;
+
+    }
     .passos{
+        &-moeda{
+            padding-top: 32px;
+            @include md{
+                padding-top: 0px;
+            }
+        }
 
         &-describe{
             display: flex;
@@ -11,14 +23,25 @@
             font-family: 'gotham';
             color: 
             #192C53;
-            font-size: 100px;
+            font-size: 70px;
             font-weight: 800;
             padding-right: 8px;
+
+            @include md{
+                font-size: 100px;
+
+            }
 
         }
         &-text{
             font-family: 'gotham';
-            font-size: 14px;
+            font-size: 12px;
+            padding-top: 16px;
+            @include md{
+                font-size: 14px;
+                padding-top: 0px;
+
+            }
         }
 
         &-box-img{
@@ -29,6 +52,7 @@
 
         }
         &-img{
+            height: 200px;
             @include md{
                 height: 200px;
 
