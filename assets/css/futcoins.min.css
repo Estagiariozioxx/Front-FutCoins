@@ -1562,7 +1562,7 @@ html .botao-lancamento:hover {
 }
 @media (min-width: 1200px) {
   .c-instruction {
-    background-color: #E6E6E6;
+    background-color: #F8F8F8;
   }
 }
 .c-instruction .instruction-title-top {
@@ -1593,6 +1593,11 @@ html .botao-lancamento:hover {
 .c-instruction .instruction-box-img {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 1200px) {
+  .c-instruction .instruction-box-img {
+    height: 150px;
+  }
 }
 .c-instruction .instruction-box-content {
   display: flex;
@@ -1909,7 +1914,7 @@ html .botao-lancamento:hover {
   text-align: center;
   margin-bottom: 32px;
   font-weight: 700;
-  color: #262626;
+  color: #192C53;
   font-family: "gotham";
 }
 
@@ -2225,6 +2230,288 @@ html .botao-lancamento:hover {
   width: 25px;
   display: block;
   cursor: pointer;
+}
+
+.c-sac {
+  padding-top: 56px;
+}
+@media (min-width: 1200px) {
+  .c-sac {
+    padding-top: 86px;
+  }
+}
+.c-sac .sac-box-balao {
+  padding-bottom: 16px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-box-balao {
+    padding-bottom: 0px;
+  }
+}
+.c-sac .sac-button {
+  padding-bottom: 56px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-button {
+    padding-bottom: 64px;
+    text-align: initial;
+  }
+}
+.c-sac .sac-button-mob {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-button-mob {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.c-sac .sac-pad {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (width: 320px) and (height: 568px) {
+  .c-sac .sac-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (width: 344px) and (height: 882px) {
+  .c-sac .sac-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (width: 320px) and (height: 480px) {
+  .c-sac .sac-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.c-sac .sac-button-text {
+  font-family: "gotham";
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+  padding: 8px;
+}
+.c-sac .sac-text {
+  font-family: "gotham";
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-text {
+    font-size: 12px;
+  }
+}
+.c-sac .sac-conteudo {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-conteudo {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .c-sac .sac-conteudo {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 340px) and (max-width: 360px) {
+  .c-sac .sac-conteudo {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (min-width: 340px) and (max-width: 390px) {
+  .c-sac .sac-conteudo {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.c-sac .sac-box-img {
+  padding-bottom: 8px;
+}
+.c-sac .sac-box-img-redes {
+  padding-bottom: 16px;
+}
+.c-sac .sac-img {
+  height: 33px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-img {
+    height: auto;
+  }
+}
+.c-sac .sac-img-redes {
+  height: 17px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-img-redes {
+    height: auto;
+  }
+}
+.c-sac .sac-balao {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  height: 153px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-balao {
+    border-radius: 16px;
+    height: 184px;
+  }
+}
+.c-sac .sac-balao-mob {
+  height: 153px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-balao-mob {
+    height: 184px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-sac .sac-balao {
+    height: 150px;
+  }
+}
+.c-sac .sac-balao-box-title {
+  text-align: center;
+  line-height: 0.8;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-balao-box-title {
+    text-align: initial;
+    line-height: normal;
+  }
+}
+.c-sac .sac-balao-title-text {
+  padding: 8px 0px 8px 0px;
+  font-family: "gotham";
+  font-weight: bold;
+  font-size: 13px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-balao-title-text {
+    font-size: 16px;
+  }
+}
+.c-sac .sac-contato {
+  font-family: "gotham";
+  font-size: 9px;
+  padding-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-contato {
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-contato {
+    font-size: 14px;
+  }
+}
+.c-sac .sac-contato-num {
+  font-family: "gotham";
+  font-size: 10px;
+  padding-top: 8px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-contato-num {
+    font-size: 14px;
+  }
+}
+.c-sac .sac-contato-email {
+  font-family: "gotham";
+  font-size: 9px;
+  padding-top: 42px;
+  padding-bottom: 8px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-contato-email {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+}
+.c-sac .sac-contato-chat {
+  font-family: "gotham";
+  font-size: 9px;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-contato-chat {
+    font-size: 14px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 11px;
+  }
+}
+@media (width: 414px) and (height: 896px) {
+  .c-sac .sac-contato-chat {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media (height: 844px) {
+  .c-sac .sac-contato-chat {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.c-sac .sac-contato-redes {
+  font-family: "gotham";
+  font-size: 9px;
+  padding-top: 18px;
+  text-align: center;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+@media (min-width: 1200px) {
+  .c-sac .sac-contato-redes {
+    font-size: 14px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+.c-turbo {
+  background-color: #F8F8F8;
+  padding: 86px 0px 86px 0px;
+}
+.c-turbo .turbo-titulo {
+  font-family: "gotham";
+  text-align: center;
+  font-size: 35px;
+}
+.c-turbo .turbo-desc {
+  text-align: center;
+  font-family: "gotham";
+  font-size: 14px;
+  padding: 32px 0px 32px 0px;
+}
+
+.negri-cash {
+  color: #00DF5E;
 }
 
 @font-face {

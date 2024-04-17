@@ -29,6 +29,9 @@ $vitrine-gray: #747474;
 @mixin md-360{
     @media (min-width: 340px) and (max-width: 360px) { @content; }
 }
+@mixin md-375-2{
+    @media (min-width: 340px) and (max-width: 390px) { @content; }
+}
 @mixin md-320{
     @media (min-width: 401px) and (max-width: 500px) { @content; }
 }
@@ -64,6 +67,10 @@ $vitrine-gray: #747474;
 
 @mixin xr{
     @media (min-width: 412px) and (max-height:932px) { @content; }
+}
+
+@mixin iphone-xr{
+    @media (width: 414px) and (height:896px) { @content; }
 }
 
 @mixin pro-12{
@@ -117,6 +124,9 @@ $vitrine-gray: #747474;
 @mixin fold{
     @media (width: 280px) and (height:653px) { @content; }
 }
+@mixin z-fold{
+    @media (width: 344px) and (height:882px) { @content; }
+}
 @mixin zenbook{
     @media (width: 853px) and (height:1280px) { @content; }
 
@@ -151,6 +161,8 @@ $vitrine-gray: #747474;
 @import "futcoins/vitrine";
 @import "futcoins/passos";
 @import "futcoins/ajuda";
+@import "futcoins/sac";
+@import "futcoins/turbo";
 @import "../fonts/icons-font";
 
 

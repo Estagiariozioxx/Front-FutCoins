@@ -1,3 +1,267 @@
 .c-sac{
+    padding-top: 56px;
+
+    @include md{
+        padding-top: 86px;
+
+    }
+    
+    .sac{
+
+        
+        &-box-balao{
+            padding-bottom: 16px;
+            @include md{
+                padding-bottom: 0px;
+            }
+        }
+        &-button{
+            padding-bottom: 56px;
+            text-align: center;
+            @include md{
+                padding-bottom: 64px;
+                text-align: initial;
+
+            }
+            &-mob{
+                padding-right: 45px;
+                padding-left: 45px;
+                @include md{
+                    padding-right: 0px;
+                    padding-left: 0px;
+                }
+            }
+
+        }
+        &-pad{
+            padding-left: 20px;
+            padding-right: 20px;
+            @include md{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @include iphone-5{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+            @include z-fold{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+            @include iphone-4{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+
+        }
+        &-button-text{
+            font-family: 'gotham';
+            border: 1px solid #000;
+            border-radius: 6px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #000000;
+            padding: 8px;
+
+        }
+        &-text{
+            font-family: 'gotham';
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+            @include md{
+                font-size: 12px;
+
+            }
+        
+        }
+        &-conteudo{
+            padding-top: 16px;
+            padding-bottom: 8px;
+
+            padding-left: 8px;
+            padding-right: 8px;
+
+            @include md{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+            @include md-0{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+
+            @include md-360{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+            @include md-375-2{
+                padding-left: 0px;
+                padding-right: 0px;
+
+            }
+        }
+
+        &-box-img{
+            padding-bottom: 8px;
+
+            &-redes{
+                padding-bottom: 16px;
+
+            }
+        }
+        &-img{
+            height: 33px;
+            @include md{
+                height: auto;
+            }
+            &-redes{
+                height: 17px;
+                @include md{
+                    height: auto;
+                }
+            }
+        }
+        &-balao{
+            border: 1px solid  rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            height: 153px;
+
+            @include md{
+                border-radius: 16px;
+                height: 184px;
+
+            }
+            &-mob{
+                height: 153px;
+                @include md{
+                    height: 184px;
+                }
+            }
+
+            @include tablets{
+                height: 150px;
+            }
+            
+        }
+        &-balao-box-title{
+            text-align: center;
+            line-height: 0.8;
+            @include md{
+                text-align: initial;
+                line-height:normal;
+            }
+        }
+        &-balao-title{
+            
+
+            &-text{
+                padding: 8px 0px 8px 0px;
+                font-family: 'gotham';
+                font-weight: bold;
+                font-size: 13px;
+                
+                @include md{
+                    font-size: 16px;
+
+                }
+            }
+        }
+        &-contato{
+            font-family: 'gotham';
+            font-size: 9px;
+            padding-bottom: 8px;
+            @include md{
+                padding-bottom: 0px;
+
+            }
+
+            @include md{
+                font-size: 14px;
+            }
+
+            &-num{
+                font-family: 'gotham';
+                font-size: 10px;
+                padding-top: 8px;
+
+                @include md{
+                    font-size: 14px;
+
+                }
+            }
+            &-email{
+                font-family: 'gotham';
+                font-size: 9px;
+                padding-top: 42px;
+                padding-bottom: 8px;
+                
+                @include md{
+                    
+                    font-size: 14px;
+                    padding-bottom: 32px;
+
+                }
+
+            }
+            &-chat{
+                font-family: 'gotham';
+                font-size: 9px;
+                padding-top: 18px;
+                padding-bottom: 15px;
+                padding-left: 8px;
+                padding-right: 8px;
+               
+                text-align: center;
+
+                @include md{
+                    font-size: 14px;
+                    padding-right: 32px;
+                    padding-left: 32px;
+                    padding-bottom: 11px;
+
+                }
+                @include iphone-xr{
+                    padding-left: 8px;
+                    padding-right: 8px;
+
+                }
+                @include pro-12{
+                    padding-left: 8px;
+                    padding-right: 8px;
+
+                }
+            }
+            &-redes{
+                font-family: 'gotham';
+                font-size: 9px;
+                padding-top: 18px;
+                text-align: center;
+                padding-right: 8px;
+                padding-left: 8px;
+
+
+                @include md{
+                    font-size: 14px;
+                    padding-right: 32px;
+                    padding-left: 32px;
+
+                }
+
+            }
+
+        }
+        &-conteudo{
+
+        }
+        
+
+    }
     
 }

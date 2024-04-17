@@ -6,7 +6,7 @@
     padding: 60px ;
 
     @include md{
-        background-color: #E6E6E6;
+        background-color: #F8F8F8;
     }
     .instruction{
        
@@ -40,6 +40,9 @@
         &-box-img{
             display: flex;
             justify-content: center;
+            @include md{
+                height: 150px;
+            }
           
         }
         &-box-content{

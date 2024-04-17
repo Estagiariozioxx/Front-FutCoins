@@ -184,7 +184,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 passos-moeda">
-                    <div class="passos-box-img d-none d-md-block d-lg-block">
+                    <div class="passos-box-img d-none d-md-flex d-lg-flex">
                         <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-2.png" class="passos-img">
                     </div>
                     <div class="passos-describe">
@@ -208,12 +208,51 @@
         </div>
     </section>
 
+    <section class="c-turbo">
+        <div class="container">
+            <h1 class="turbo-titulo">Cashback Turbo</h1>
+            <p class="turbo-desc">E para você que é fanático por descontos, confira nosso <strong class="negri-cash">Cashback turbo!</strong> </p>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="turbo-esq d-flex align-items-center">
+                    <div class="turbo-box-img">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-esq.png">
+                    </div>
+                    <div>
+                        <p>Produtos selecionados com o dobro de cashback </p>
+                    </div>
+                </div>
+
+                <div class="turbo-dir">
+                    <div class="turbo-box-img2 justify-content-center d-flex">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-dir.png">
+                    </div>
+                    <div>
+                        <p>E para garantir mais vantagens, confira o nosso App e ganhe um cupom de 10% OFF na primeira compra:</p>
+                    </div>
+                    <div>
+                        <span>APP10</span>
+                    </div>
+                    <div>
+                        <div>
+                            <span>App Store</span>
+                        </div>
+                        <div>
+                            <span>Google Play</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!--<section class="c-banner"></section>-->
     <div class="block vitrine c-vitrine">
         <div class="container">
-            <h1 class="titulo-vitrine">{{settings.tituloVitrinefutCoins}}</h1>
+           <!-- <h1 class="titulo-vitrine">{{settings.tituloVitrinefutCoins}}</h1>-->
+            <h1 class="titulo-vitrine">Produtos em Cashback</h1>
             <div class="row justify-content-center position-relative">
                 <div class="col-10">
                     <div data-products="{{settings.futCoins}}" id="vitrine-fut"></div>
@@ -423,40 +462,84 @@
 
     <section class="c-sac">
         <div class="container">
-            <div class="sac-button">
-                <a class="sac-button-text">Confira nosso Regulamento</a>
+            <div class="d-flex justify-content-center flex-column align-items-center">
+                <div class="sac-button">
+                    <a class="sac-button-text" href="#">Confira nosso Regulamento</a>
+                </div>
+                <div class="sac-button sac-button-mob">
+                    <span class="sac-text">SE A SUA DÚVIDA NÃO ESTIVER AQUI, FALA COM A GENTE!</span>    
+                </div>
             </div>
-            <div>
-                <span class="sac-text">SE A SUA DÚVIDA NÃO ESTIVER AQUI, FALA COM A GENTE!</span>    
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="sac-balao">
-                        <div class="d-flex align-items-center justify-content-center flex-column">
+            <div class="row sac-pad">
+                <div class="col-md-3 col-6 sac-box-balao">
+                    <div class="sac-balao sac-balao-mob">
+                        <div class="sac-conteudo d-flex align-items-center justify-content-center flex-column">
                             <div class="sac-box-img">
-                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/sac-1.svg">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/sac-1.svg" class="sac-img">
                             </div>
                             <div class="sac-balao-box-title">
-                                <span class="sac-balao-title">Central de Atendimento</span>
+                                <span class="sac-balao-title-text">Central de Atendimento</span>
                             </div>
                             <div class="sac-contato d-flex justify-content-center align-items-center flex-column">
-                                <span>(11) 4858-3500</span>
+                                <span class="sac-contato-num">(11) 4858-3500</span>
                                 <span>Seg. a Sex das 07:15 às 19:45</span>
                                 <span>e Sáb. das  das 07:15 às 14:45</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 col-6 sac-box-balao">
+                    <div class="sac-balao sac-balao-mob">
+                        <div class="sac-conteudo d-flex align-items-center justify-content-center flex-column">
+                            <div class="sac-box-img">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/emailsvg.svg" class="sac-img">
+                            </div>
+                            <div class="sac-balao-box-title">
+                                <span class="sac-balao-title-text">Email</span>
+                            </div>
+                            <div class="sac-contato d-flex justify-content-center align-items-center flex-column">
+                                <span class="sac-contato-email">contato@futfanatics.com.br</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 sac-box-balao">
+                    <div class="sac-balao">
+                        <div class="sac-conteudo d-flex align-items-center justify-content-center flex-column">
+                            <div class="sac-box-img">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/chatsvg.svg" class="sac-img">
+                            </div>
+                            <div class="sac-balao-box-title">
+                                <span class="sac-balao-title-text">Chat Online</span>
+                            </div>
+                            <div class="sac-contato d-flex justify-content-center align-items-center flex-column">
+                                <span class="sac-contato-chat">Tire suas dúvidas em tempo real no nosso Chat.</span>
+                                
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-                <div class="col-md-3">
-
+                <div class="col-md-3 col-6 sac-box-balao">
+                    <div class="sac-balao">
+                        <div class="sac-conteudo d-flex align-items-center justify-content-center flex-column">
+                            <div class="sac-box-img-redes">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/rede-1.svg" class="sac-img-redes">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/rede-2.svg" class="sac-img-redes">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/rede-3.svg" class="sac-img-redes">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/rede-4.svg" class="sac-img-redes">
+                                <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/rede-5.svg" class="sac-img-redes">
+                            </div>
+                            <div class="sac-balao-box-title">
+                                <span class="sac-balao-title-text">Redes Sociais</span>
+                            </div>
+                            <div class="sac-contato d-flex justify-content-center align-items-center flex-column">
+                                <span class="sac-contato-redes">Fale conosco em nossas redes sociais.</span>
+                                <span>#somostodosfanaticos</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3">
-
-                </div>
-
             </div>
         </div>
     </section>
