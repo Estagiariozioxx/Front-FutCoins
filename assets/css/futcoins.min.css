@@ -1691,7 +1691,7 @@ html .botao-lancamento:hover {
 }
 @media (min-width: 1200px) {
   .c-wallet .wallet-img {
-    height: 300px;
+    height: 280px;
   }
 }
 .c-wallet .wallet-box {
