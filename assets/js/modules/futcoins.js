@@ -1,6 +1,6 @@
 (function($){
 	var containerInstruction = $(".instruction_slick")
-	var containerHelp = $(".help_slick")
+	//var containerHelp = $(".help_slick")
 
 	var produto = [117475,118227,118189,108715,71019,116118,116119,116120,116123,116125,117175,115834];
 
@@ -167,11 +167,65 @@
 	  }
 	  return true;
 	}
-  
+
+/*
+	function istablet() {
+		if (window.innerWidth >= 768) {
+		  return false;
+		}
+		return true;
+	  }
+
+	  if(istablet){
+		containerInstruction.slick({
+			autoplay: false,
+			autoplaySpeed: 4000,
+			pauseOnFocus: false,
+			pauseOnHover: false,
+			arrows: false,
+			dots: false,
+			adaptiveHeight: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
 	
+			responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: true,
+					}
+				}]
+		});
 
 
-	containerInstruction.slick({
+
+	  }
+	  else{
+		containerInstruction.slick({
+			autoplay: false,
+			autoplaySpeed: 4000,
+			pauseOnFocus: false,
+			pauseOnHover: false,
+			arrows: false,
+			dots: false,
+			adaptiveHeight: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+	
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+					}
+				}]
+		});
+
+	  }*/
+
+	  containerInstruction.slick({
 		autoplay: false,
 		autoplaySpeed: 4000,
 		pauseOnFocus: false,
@@ -189,8 +243,21 @@
 				slidesToScroll: 1,
 				dots: true,
 				}
-			}]
+			},{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: true,
+					}
+				}]
 	});
+  
+	
+
+
+
+/*
 
 	containerHelp.slick({
 		autoplay: false,
@@ -211,7 +278,7 @@
 						}
 			
 			}]
-	});
+	});*/
 	var target_top = $(window).height();
 	$('.works-function').on('click', function(){
 		$('html, body').animate({ scrollTop: target_top/3 }, 20);
@@ -245,6 +312,80 @@
 	
 
 })(jQuery);
+
+    // Função para ajustar a altura da imagem com base na altura da tela
+	function ajustarAlturaDaImagem() {
+ 
+		var alturaDaTela = window.innerHeight;
+		var alturaDaImagem = alturaDaTela * 0.61; 
+	
+		document.getElementById('banner-mob').style.height = alturaDaImagem + 'px';
+	}
+	
+	window.addEventListener('resize', ajustarAlturaDaImagem);
+	
+	window.addEventListener('load', ajustarAlturaDaImagem);
+	
+	
+	
+	// Função para ajustar a altura da div "button" dinamicamente
+	function ajustarAlturaButton() {
+		// Seleciona a section
+		var section = document.querySelector('.mob-text.d-md-none');
+		// Seleciona a div "button" dentro da section
+		var buttonDiv = section.querySelector('.button');
+		// Calcula a altura da section
+		var sectionHeight = section.offsetHeight;
+		// Calcula a altura total ocupada pelas outras divs dentro da section
+		var totalContentHeight = 0;
+		section.childNodes.forEach(function(node) {
+			if (node.nodeType === 1 && node !== buttonDiv) { // 1 means it's an element node
+				totalContentHeight += node.offsetHeight;
+			}
+		});
+		// Calcula a altura restante
+		var remainingHeight = sectionHeight - totalContentHeight;
+		// Define a altura da div "button" igual à altura restante
+		buttonDiv.style.height = remainingHeight + 'px';
+	}
+	
+	// Chama a função quando a página é carregada e quando a janela é redimensionada
+	window.addEventListener('DOMContentLoaded', ajustarAlturaButton);
+	window.addEventListener('resize', ajustarAlturaButton);
+	
+	function printScreenSize() {
+	  var width = window.screen.width;
+	  var height = window.screen.height;
+	 console.log("Width: " + width + "px<br>");
+	  console.log("Height: " + height + "px");
+	}
+	
+	// Chamando a função para imprimir na tela
+	printScreenSize();
+	
+	
+	
+	
+	function verificarResolucao() {
+	  // Verificar se a largura da tela está entre 768px e 1024px
+	  if (window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches) {
+		// Ocultar a div que você deseja esconder
+		document.getElementById("pc").style.display = "none !important";
+		console.log("entere");
+		
+		// Exibir a div que você deseja mostrar
+		document.getElementById("cel").style.display = "block !important";
+	  } else {
+		// Se a largura da tela estiver fora do intervalo especificado, reverter as alterações
+		document.getElementById("cel").style.display = "block !important";
+		document.getElementById("pc").style.display = "none !important";
+	  }
+	}
+	
+	// Chamar a função quando a página carregar e quando a janela for redimensionada
+	window.onload = verificarResolucao;
+	window.onresize = verificarResolucao;
+	
 
 // Seleciona todas as divs de pergunta
 const divsPergunta = document.querySelectorAll('.ajuda-pergunta');
@@ -287,6 +428,23 @@ divsPergunta.forEach(function(divPergunta) {
 	console.log("Entrei aquiii");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+	var turboAppImg = document.querySelector('.turbo-app-img');
+	var turboAppText = document.querySelector('.turbo-app-text');
+
+	turboAppImg.addEventListener('click', function() {
+		// Copiar o texto do span para a área de transferência
+		var textToCopy = turboAppText.innerText;
+		var tempInput = document.createElement("input");
+		tempInput.value = textToCopy;
+		document.body.appendChild(tempInput);
+		tempInput.select();
+		document.execCommand("copy");
+		document.body.removeChild(tempInput);
+		
+	});
+})
 
 
 

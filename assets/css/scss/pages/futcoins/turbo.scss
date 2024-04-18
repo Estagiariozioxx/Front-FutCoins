@@ -3,16 +3,208 @@
     padding: 86px 0px 86px 0px;
 
     .turbo{
+        &-10{
+            color: #E0B531;
+        }
+        &-geral{
+
+            @include md{
+              //  padding: 0px 8px 0px 8px;
+            }
+        }
         &-titulo{
             font-family: 'gotham';
             text-align: center;
-            font-size: 35px;
+            font-size: 22px;
+            @include md{
+                font-size: 35px;
+            }
         }
         &-desc{
             text-align: center;
             font-family: 'gotham';
-            font-size: 14px;
+            font-size: 15px;
             padding: 32px 0px 32px 0px;
+
+            @include md{
+                font-size: 16px;
+                display: block;
+            }
+        }
+
+        &-box-text-esq{
+            padding-top: 64px;
+            padding-bottom: 45px;
+            display: flex;
+            justify-content: center;
+            
+            
+            @include md{
+                display: block;
+                padding-left: 8px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+
+            }
+            @include tablets{
+                display: block;
+                padding-left: 8px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+
+            }
+            
+        }
+        &-text-esq{
+            font-family: 'gotham';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.2;
+            text-align: left;
+
+            @include tablets{
+                font-size: 14px;
+
+            }
+
+            
+            @include md{
+                text-align: center;
+                text-align: initial;
+            }
+
+        }
+        &-img-esq{
+            height: 220px;
+            @include md{
+                height: 250px;
+            }
+            @include tablets{
+                height: 180px;
+            }
+            
+        }
+
+        //dir
+        &-box-img-dir{
+            padding-bottom: 32px;
+
+        }
+
+        &-img-dir{
+            height: 260px;
+
+            @include tablets{
+                height: 180px;
+            }
+
+        }
+
+        &-box-text-dir{
+            text-align: center;
+            padding: 0px 64px 0px 64px;
+            @include md{
+                padding: 0px 0px 0px 0px;
+
+            }
+        }
+        &-text-dir{
+            font-family: 'gotham';
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.2;
+
+            @include tablets{
+                display: none;
+                font-size: 14px;
+
+            }
+
+        }
+        &-text-dir-mob{
+            font-family: 'gotham';
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.2;
+            text-align: center;
+        }
+        &-text-dir-tablet{
+            display: none;
+            @include tablets{
+                display: block;
+                font-family: 'gotham';
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.2;
+            }
+            @include ipad-pro{
+                display: none;
+            }
+            @include md-1024{
+                display: none;
+            }
+        }
+        &-app{
+            background-color: #E0B531;
+            
+            padding: 3px 32px 3px 32px;
+            @include md{
+                margin-top: auto;
+                border-radius: 5px;
+
+            }
+            border-radius: 8px;
+            margin-top: 8px;
+        }
+        &-app-img{
+            height: 20px;
+            cursor: pointer;
+        }
+        &-app-text{
+            font-family: 'gotham';
+            font-size: 18px;
+            padding-right: 8px;
+
+            @include md{
+                font-size: 14px;
+
+            }
+        }
+
+        &-box-download{
+            margin-top: 32px;
+        }
+        
+        &-apple{
+            border: 1px solid #000;
+            margin-right: 16px;
+            border-radius: 4px;
+            padding: 8px 8px 8px 8px;
+            font-family: 'gotham';
+            font-weight: bold;
+            font-weight: 500;
+            font-size: 16px;
+            
+
+            @include md{
+                font-size: 14px;
+
+            }
+        }
+
+        &-android{
+            border: 1px solid #000;
+    
+            border-radius: 4px;
+            padding: 8px 8px 8px 8px;
+            font-family: 'gotham';
+            font-weight: bold;
+            font-weight: 500;
+            font-size: 16px;
+            @include md{
+                font-size: 14px;
+
+            }
         }
     }
 }

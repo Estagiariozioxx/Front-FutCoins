@@ -57,6 +57,9 @@
                 height: 200px;
 
             }
+            @include tablets{
+                height: 140px;
+            }
             
         }
 

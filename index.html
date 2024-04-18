@@ -213,31 +213,39 @@
             <h1 class="turbo-titulo">Cashback Turbo</h1>
             <p class="turbo-desc">E para você que é fanático por descontos, confira nosso <strong class="negri-cash">Cashback turbo!</strong> </p>
 
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="turbo-esq d-flex align-items-center">
-                    <div class="turbo-box-img">
-                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-esq.png">
+            <div class="d-md-flex align-items-center justify-content-around turbo-geral">
+                <div class="turbo-esq d-md-flex align-items-center">
+                    <div class="turbo-box-img d-flex d-md-block justify-content-center">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-esq.png" class="turbo-img-esq">
                     </div>
-                    <div>
-                        <p>Produtos selecionados com o dobro de cashback </p>
+                    <div class="turbo-box-text-esq">
+                        <p class="turbo-text-esq">Produtos selecionados com<br> o <strong>dobro de cashback</strong> </p>
                     </div>
                 </div>
 
-                <div class="turbo-dir">
-                    <div class="turbo-box-img2 justify-content-center d-flex">
-                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-dir.png">
+                <div class="turbo-dir d-flex flex-column justify-content-center align-items-center">
+                    <div class="turbo-box-img-dir justify-content-center d-flex">
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/img-dir.png" class="turbo-img-dir">
                     </div>
-                    <div>
-                        <p>E para garantir mais vantagens, confira o nosso App e ganhe um cupom de 10% OFF na primeira compra:</p>
+                    <div class="turbo-box-text-dir">
+                        <p class="turbo-text-dir d-none d-lg-block">E para garantir mais vantagens, confira o <br> nosso <strong>App</strong>  e ganhe um cupom<br>de <strong class="turbo-10">10% OFF</strong> na primeira compra:</p>
+    
+                        <p class="turbo-text-dir-mob d-md-none">E para garantir mais vantagens, confira o  nosso <strong>App</strong>  e ganhe um cupom de <strong class="turbo-10">10% OFF</strong> na primeira compra:</p>
+
+                        <p class="turbo-text-dir-tablet">E para garantir mais vantagens, confira o  nosso <strong>App</strong>  e ganhe um cupom de <strong class="turbo-10">10% OFF</strong> na primeira compra:</p>
+
                     </div>
-                    <div>
-                        <span>APP10</span>
+                    <div class="turbo-app">
+                        <span class="turbo-app-text"><strong>APP10</strong></span>
+                        <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/copiarsvg.svg" class="turbo-app-img">
                     </div>
-                    <div>
-                        <div>
+                    <div class="turbo-box-download d-flex">
+                        <div class="turbo-apple">
+                            <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/apple.svg">
                             <span>App Store</span>
                         </div>
-                        <div>
+                        <div class="turbo-android">
+                            <img src="https://cdn.futfanatics.com.br/futfanatics-nacional/paginas-personalizadas/futcoins/android.svg">
                             <span>Google Play</span>
                         </div>
                     </div>
@@ -558,78 +566,6 @@
 
 
 <script>
-    // Função para ajustar a altura da imagem com base na altura da tela
-function ajustarAlturaDaImagem() {
- 
-    var alturaDaTela = window.innerHeight;
-    var alturaDaImagem = alturaDaTela * 0.61; 
-
-    document.getElementById('banner-mob').style.height = alturaDaImagem + 'px';
-}
-
-window.addEventListener('resize', ajustarAlturaDaImagem);
-
-window.addEventListener('load', ajustarAlturaDaImagem);
-
-
-
-// Função para ajustar a altura da div "button" dinamicamente
-function ajustarAlturaButton() {
-    // Seleciona a section
-    var section = document.querySelector('.mob-text.d-md-none');
-    // Seleciona a div "button" dentro da section
-    var buttonDiv = section.querySelector('.button');
-    // Calcula a altura da section
-    var sectionHeight = section.offsetHeight;
-    // Calcula a altura total ocupada pelas outras divs dentro da section
-    var totalContentHeight = 0;
-    section.childNodes.forEach(function(node) {
-        if (node.nodeType === 1 && node !== buttonDiv) { // 1 means it's an element node
-            totalContentHeight += node.offsetHeight;
-        }
-    });
-    // Calcula a altura restante
-    var remainingHeight = sectionHeight - totalContentHeight;
-    // Define a altura da div "button" igual à altura restante
-    buttonDiv.style.height = remainingHeight + 'px';
-}
-
-// Chama a função quando a página é carregada e quando a janela é redimensionada
-window.addEventListener('DOMContentLoaded', ajustarAlturaButton);
-window.addEventListener('resize', ajustarAlturaButton);
-
-function printScreenSize() {
-  var width = window.screen.width;
-  var height = window.screen.height;
- console.log("Width: " + width + "px<br>");
-  console.log("Height: " + height + "px");
-}
-
-// Chamando a função para imprimir na tela
-printScreenSize();
-
-
-
-
-function verificarResolucao() {
-  // Verificar se a largura da tela está entre 768px e 1024px
-  if (window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches) {
-    // Ocultar a div que você deseja esconder
-    document.getElementById("pc").style.display = "none !important";
-    console.log("entere");
-    
-    // Exibir a div que você deseja mostrar
-    document.getElementById("cel").style.display = "block !important";
-  } else {
-    // Se a largura da tela estiver fora do intervalo especificado, reverter as alterações
-    document.getElementById("cel").style.display = "block !important";
-    document.getElementById("pc").style.display = "none !important";
-  }
-}
-
-// Chamar a função quando a página carregar e quando a janela for redimensionada
-window.onload = verificarResolucao;
-window.onresize = verificarResolucao;
 
 
 

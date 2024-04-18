@@ -1599,6 +1599,11 @@ html .botao-lancamento:hover {
     height: 150px;
   }
 }
+@media (min-width: 0px) and (max-width: 320px) {
+  .c-instruction .instruction-box-img {
+    height: 150px;
+  }
+}
 .c-instruction .instruction-box-content {
   display: flex;
   flex-direction: column;
@@ -2143,6 +2148,11 @@ html .botao-lancamento:hover {
     height: 200px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-passos .passos-img {
+    height: 140px;
+  }
+}
 
 .c-ajuda {
   padding: 0px 16px 0px 16px;
@@ -2498,16 +2508,202 @@ html .botao-lancamento:hover {
   background-color: #F8F8F8;
   padding: 86px 0px 86px 0px;
 }
+.c-turbo .turbo-10 {
+  color: #E0B531;
+}
 .c-turbo .turbo-titulo {
   font-family: "gotham";
   text-align: center;
-  font-size: 35px;
+  font-size: 22px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-titulo {
+    font-size: 35px;
+  }
 }
 .c-turbo .turbo-desc {
   text-align: center;
   font-family: "gotham";
-  font-size: 14px;
+  font-size: 15px;
   padding: 32px 0px 32px 0px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-desc {
+    font-size: 16px;
+    display: block;
+  }
+}
+.c-turbo .turbo-box-text-esq {
+  padding-top: 64px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-box-text-esq {
+    display: block;
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-turbo .turbo-box-text-esq {
+    display: block;
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.c-turbo .turbo-text-esq {
+  font-family: "gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: left;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-turbo .turbo-text-esq {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-text-esq {
+    text-align: center;
+    text-align: initial;
+  }
+}
+.c-turbo .turbo-img-esq {
+  height: 220px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-img-esq {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-turbo .turbo-img-esq {
+    height: 180px;
+  }
+}
+.c-turbo .turbo-box-img-dir {
+  padding-bottom: 32px;
+}
+.c-turbo .turbo-img-dir {
+  height: 260px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-turbo .turbo-img-dir {
+    height: 180px;
+  }
+}
+.c-turbo .turbo-box-text-dir {
+  text-align: center;
+  padding: 0px 64px 0px 64px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-box-text-dir {
+    padding: 0px 0px 0px 0px;
+  }
+}
+.c-turbo .turbo-text-dir {
+  font-family: "gotham";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-turbo .turbo-text-dir {
+    display: none;
+    font-size: 14px;
+  }
+}
+.c-turbo .turbo-text-dir-mob {
+  font-family: "gotham";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+.c-turbo .turbo-text-dir-tablet {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .c-turbo .turbo-text-dir-tablet {
+    display: block;
+    font-family: "gotham";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+@media (width: 1024px) and (height: 1366px) {
+  .c-turbo .turbo-text-dir-tablet {
+    display: none;
+  }
+}
+@media (width: 1024px) {
+  .c-turbo .turbo-text-dir-tablet {
+    display: none;
+  }
+}
+.c-turbo .turbo-app {
+  background-color: #E0B531;
+  padding: 3px 32px 3px 32px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-app {
+    margin-top: auto;
+    border-radius: 5px;
+  }
+}
+.c-turbo .turbo-app-img {
+  height: 20px;
+  cursor: pointer;
+}
+.c-turbo .turbo-app-text {
+  font-family: "gotham";
+  font-size: 18px;
+  padding-right: 8px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-app-text {
+    font-size: 14px;
+  }
+}
+.c-turbo .turbo-box-download {
+  margin-top: 32px;
+}
+.c-turbo .turbo-apple {
+  border: 1px solid #000;
+  margin-right: 16px;
+  border-radius: 4px;
+  padding: 8px 8px 8px 8px;
+  font-family: "gotham";
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-apple {
+    font-size: 14px;
+  }
+}
+.c-turbo .turbo-android {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px 8px 8px 8px;
+  font-family: "gotham";
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 16px;
+}
+@media (min-width: 1200px) {
+  .c-turbo .turbo-android {
+    font-size: 14px;
+  }
 }
 
 .negri-cash {

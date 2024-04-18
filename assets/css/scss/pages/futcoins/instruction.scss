@@ -43,6 +43,9 @@
             @include md{
                 height: 150px;
             }
+            @include md-0{
+                height: 150px;
+            }
           
         }
         &-box-content{
