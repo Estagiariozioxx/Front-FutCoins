@@ -2097,7 +2097,7 @@ html .botao-lancamento:hover {
 }
 @media (min-width: 1200px) {
   .c-passos {
-    padding: 0px 0px 0px 0px;
+    padding: 0px 0px 60px 0px;
   }
 }
 .c-passos .passos-moeda {
@@ -2168,7 +2168,7 @@ html .botao-lancamento:hover {
   font-size: 16px;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 .c-ajuda .ajuda-title {
   color: #000;
@@ -2310,7 +2310,7 @@ html .botao-lancamento:hover {
   font-family: "gotham";
   border: 1px solid #000;
   border-radius: 6px;
-  font-size: 20px;
+  font-size: 16px;
   text-decoration: none;
   color: #000000;
   padding: 8px;
